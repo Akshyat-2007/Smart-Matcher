@@ -1,0 +1,56 @@
+{
+  "name": "Engineering Chemistry",
+  "slug": "eng-chemistry",
+  "field": "Engineering (Core)",
+  "description": "Electrochemistry, polymers, water technology, corrosion engineering, and fuels.",
+  "topics": [
+    {
+      "name": "Electrochemistry & Batteries",
+      "description": "Galvanic cells, Nernst equation, lithium-ion"
+    },
+    {
+      "name": "Corrosion & Protection",
+      "description": "Galvanic corrosion, sacrificial anode, coatings"
+    },
+    {
+      "name": "Water Treatment",
+      "description": "Hardness, reverse osmosis, ion exchange"
+    },
+    {
+      "name": "Polymers & Composites",
+      "description": "Thermoplastics, thermosets, polymerization"
+    },
+    {
+      "name": "Spectroscopy & Instrumental",
+      "description": "UV-Vis, IR spectroscopy, chromatography"
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "In cathodic protection via sacrificial anode, what metal is commonly connected to steel underground pipelines to prevent rusting?",
+      "topic": "Corrosion & Protection",
+      "options": [
+        "Copper",
+        "Gold",
+        "Zinc or Magnesium",
+        "Lead"
+      ],
+      "correct_index": 2,
+      "explanation": "Zinc and magnesium have more negative reduction potentials than iron/steel, oxidizing preferentially as sacrificial anodes.",
+      "difficulty": "medium"
+    },
+    {
+      "prompt": "What unit operation removes dissolved salts from seawater using a semipermeable membrane under high pressure?",
+      "topic": "Water Treatment",
+      "options": [
+        "Sedimentation",
+        "Reverse Osmosis",
+        "Aeration",
+        "Chlorination"
+      ],
+      "correct_index": 1,
+      "explanation": "Reverse osmosis applies mechanical pressure higher than the natural osmotic pressure to force pure water through a semipermeable membrane.",
+      "difficulty": "easy"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "name": "Pharmacology",
+  "slug": "pharmacology",
+  "field": "Medical",
+  "description": "Pharmacokinetics (ADME), pharmacodynamics, autonomic pharmacology, antimicrobials, and cardiovascular drugs.",
+  "topics": [
+    {
+      "name": "Pharmacokinetics (ADME)",
+      "description": "Absorption, bioavailability, volume of distribution, clearance"
+    },
+    {
+      "name": "Pharmacodynamics & Receptors",
+      "description": "Agonists, antagonists, ED50, therapeutic index"
+    },
+    {
+      "name": "Autonomic Nervous System Drugs",
+      "description": "Adrenergic agonists/blockers, cholinergic agents"
+    },
+    {
+      "name": "Cardiovascular Pharmacology",
+      "description": "ACE inhibitors, beta-blockers, statins, antiarrhythmics"
+    },
+    {
+      "name": "Antimicrobials & Antibiotics",
+      "description": "Penicillins, cephalosporins, resistance mechanisms"
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "What pharmacokinetic parameter indicates the fraction of an administered drug dose that reaches systemic circulation in active form?",
+      "topic": "Pharmacokinetics (ADME)",
+      "options": [
+        "Volume of distribution (Vd)",
+        "Bioavailability (F)",
+        "Clearance (Cl)",
+        "Half-life (t1/2)"
+      ],
+      "correct_index": 1,
+      "explanation": "Bioavailability (F) is the fraction of unchanged drug that reaches the systemic circulation (100% for IV administration).",
+      "difficulty": "easy"
+    },
+    {
+      "prompt": "What is the primary mechanism of action of beta-lactam antibiotics like penicillin?",
+      "topic": "Antimicrobials & Antibiotics",
+      "options": [
+        "Inhibition of 50S bacterial ribosomal subunit",
+        "Inhibition of bacterial cell wall peptidoglycan synthesis via transpeptidase binding",
+        "Disruption of DNA gyrase",
+        "Inhibition of folic acid synthesis"
+      ],
+      "correct_index": 1,
+      "explanation": "Beta-lactams bind penicillin-binding proteins (transpeptidases), blocking cross-linking of the peptidoglycan cell wall.",
+      "difficulty": "medium"
+    }
+  ]
+}

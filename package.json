@@ -1,0 +1,21 @@
+{
+  "name": "smart-study-matcher",
+  "version": "2.0.0",
+  "description": "Smart Study Group Matcher (v2: Teach-Swap + Accountability)",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -p \"[{name}]\" -n \"SERVER,CLIENT\" -c \"cyan.bold,magenta.bold\" \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "build": "npm --prefix client run build",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "server": "npm --prefix server start",
+    "client": "npm --prefix client start",
+    "db:init": "node server/src/db/init.js",
+    "db:seed": "node server/src/db/seed.js",
+    "simulate": "node simulation/runSimulation.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

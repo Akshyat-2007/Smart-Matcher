@@ -1,0 +1,56 @@
+{
+  "name": "Biology",
+  "slug": "biology",
+  "field": "Medical",
+  "description": "Cell biology, molecular genetics, cellular respiration, meiosis, and evolutionary mechanisms.",
+  "topics": [
+    {
+      "name": "Cell Structure & Organelles",
+      "description": "Membranes, mitochondria, endoplasmic reticulum"
+    },
+    {
+      "name": "Molecular Genetics & DNA",
+      "description": "Replication, transcription, translation, mutations"
+    },
+    {
+      "name": "Cellular Respiration & ATP",
+      "description": "Glycolysis, Krebs cycle, electron transport chain"
+    },
+    {
+      "name": "Cell Division & Heredity",
+      "description": "Mitosis, meiosis, Mendelian genetics"
+    },
+    {
+      "name": "Ecology & Evolution",
+      "description": "Natural selection, population genetics, ecosystems"
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "In eukaryotic cells, which organelle is the primary site of oxidative phosphorylation and aerobic ATP production?",
+      "topic": "Cell Structure & Organelles",
+      "options": [
+        "Golgi apparatus",
+        "Mitochondria",
+        "Lysosome",
+        "Ribosome"
+      ],
+      "correct_index": 1,
+      "explanation": "Mitochondria generate the vast majority of cellular ATP via the electron transport chain on the inner mitochondrial membrane.",
+      "difficulty": "easy"
+    },
+    {
+      "prompt": "During transcription in eukaryotic protein synthesis, which enzyme synthesizes mRNA from the DNA template strand?",
+      "topic": "Molecular Genetics & DNA",
+      "options": [
+        "DNA Polymerase III",
+        "RNA Polymerase II",
+        "DNA Ligase",
+        "Peptidyl transferase"
+      ],
+      "correct_index": 1,
+      "explanation": "RNA Polymerase II reads the template DNA strand in the 3’ to 5’ direction to synthesize pre-mRNA.",
+      "difficulty": "medium"
+    }
+  ]
+}

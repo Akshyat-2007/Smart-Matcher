@@ -1,0 +1,4 @@
+Strategy,TotalPairs,AvgScore,BadMatchCount,BadMatchRatePct,BadMatchesAvoidedPct,CompletionNoAccW1,CompletionNoAccW2,CompletionNoAccW3,CompletionNoAccW4,OverallNoAccPct,CompletionWithAccW1,CompletionWithAccW2,CompletionWithAccW3,CompletionWithAccW4,OverallWithAccPct
+"Random Pairing",100,4.11,99,99,0,19,3,1,0,5.8,36,35,44,39,38.5
+"Naive Greedy (Slot-only)",87,36.26,68,78.2,31,39.1,20.7,11.5,8,19.8,57.5,52.9,57.5,72.4,60.1
+"Smart Engine (Teach-Swap + Irving Stable)",83,49.77,30,36.1,69,45.8,26.5,10.8,7.2,22.6,63.9,65.1,66.3,75.9,67.8

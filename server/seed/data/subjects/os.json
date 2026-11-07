@@ -1,0 +1,56 @@
+{
+  "name": "Operating Systems",
+  "slug": "os",
+  "field": "Engineering (CS/IT)",
+  "description": "Process management, CPU scheduling, synchronization, virtual memory, and file systems.",
+  "topics": [
+    {
+      "name": "Processes & Threads",
+      "description": "PCB, context switching, fork/exec, IPC"
+    },
+    {
+      "name": "CPU Scheduling",
+      "description": "Round Robin, SJF, Multilevel feedback queues"
+    },
+    {
+      "name": "Process Synchronization",
+      "description": "Mutexes, semaphores, monitors, deadlock conditions"
+    },
+    {
+      "name": "Virtual Memory & Paging",
+      "description": "Page tables, TLB, page faults, LRU replacement"
+    },
+    {
+      "name": "Storage & File Systems",
+      "description": "Inodes, directory structures, journaling"
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "Which condition is NOT one of Coffman’s four necessary conditions for deadlock to occur?",
+      "topic": "Process Synchronization",
+      "options": [
+        "Mutual Exclusion",
+        "Hold and Wait",
+        "Preemption Allowed",
+        "Circular Wait"
+      ],
+      "correct_index": 2,
+      "explanation": "Deadlock requires NO preemption (resources cannot be forcibly reclaimed). If preemption is allowed, deadlock cannot occur.",
+      "difficulty": "medium"
+    },
+    {
+      "prompt": "What hardware component accelerates virtual-to-physical address translation in modern CPUs?",
+      "topic": "Virtual Memory & Paging",
+      "options": [
+        "Translation Lookaside Buffer (TLB)",
+        "Direct Memory Access (DMA)",
+        "Arithmetic Logic Unit (ALU)",
+        "Instruction Register"
+      ],
+      "correct_index": 0,
+      "explanation": "The TLB is a high-speed hardware cache of recent virtual-to-physical page translations.",
+      "difficulty": "medium"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "name": "Pathology",
+  "slug": "pathology",
+  "field": "Medical",
+  "description": "Cellular adaptation, necrosis, acute & chronic inflammation, neoplasia, and hemodynamic disorders.",
+  "topics": [
+    {
+      "name": "Cell Injury & Necrosis",
+      "description": "Apoptosis vs necrosis, ischemia, free radicals"
+    },
+    {
+      "name": "Inflammation & Healing",
+      "description": "Vascular changes, leukocytes, granulation tissue"
+    },
+    {
+      "name": "Hemodynamic Disorders",
+      "description": "Edema, thrombosis, embolism, shock"
+    },
+    {
+      "name": "Neoplasia & Oncology",
+      "description": "Benign vs malignant, hallmarks of cancer, staging"
+    },
+    {
+      "name": "Infectious & Immune Pathology",
+      "description": "Hypersensitivity reactions, autoimmune diseases"
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "What pattern of tissue necrosis is characteristic of ischemic stroke and brain infarcts?",
+      "topic": "Cell Injury & Necrosis",
+      "options": [
+        "Coagulative necrosis",
+        "Liquefactive necrosis",
+        "Caseous necrosis",
+        "Fat necrosis"
+      ],
+      "correct_index": 1,
+      "explanation": "In the brain, rich hydrolytic lysosomal enzymes rapidly digest dead tissue into a viscous liquid, characteristic of liquefactive necrosis.",
+      "difficulty": "medium"
+    },
+    {
+      "prompt": "Which triad of factors (Virchow’s Triad) contributes directly to pathological thrombosis?",
+      "topic": "Hemodynamic Disorders",
+      "options": [
+        "Hypothermia, acidosis, coagulopathy",
+        "Endothelial injury, stasis or turbulent blood flow, hypercoagulability",
+        "Hypertension, hypoglycemia, infection",
+        "Vasodilation, bradycardia, hypoxia"
+      ],
+      "correct_index": 1,
+      "explanation": "Virchow’s triad describes endothelial damage, abnormal flow (stasis/turbulence), and hypercoagulability as the primary triggers of thrombosis.",
+      "difficulty": "easy"
+    }
+  ]
+}

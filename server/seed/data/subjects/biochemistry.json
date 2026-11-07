@@ -1,0 +1,56 @@
+{
+  "name": "Biochemistry",
+  "slug": "biochemistry",
+  "field": "Medical",
+  "description": "Enzyme kinetics, metabolic pathways (glycolysis, gluconeogenesis), lipids, and nucleic acids.",
+  "topics": [
+    {
+      "name": "Enzyme Kinetics & Regulation",
+      "description": "Michaelis-Menten, Vmax, Km, competitive inhibition"
+    },
+    {
+      "name": "Carbohydrate Metabolism",
+      "description": "Glycolysis, Krebs cycle, glycogenolysis"
+    },
+    {
+      "name": "Lipid Metabolism",
+      "description": "Beta-oxidation, fatty acid synthesis, cholesterol"
+    },
+    {
+      "name": "Amino Acid Metabolism",
+      "description": "Transamination, urea cycle, essential amino acids"
+    },
+    {
+      "name": "Bioenergetics & ATP",
+      "description": "Free energy, redox couples, cytochromes"
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "In Michaelis-Menten enzyme kinetics, what does the constant Km represent?",
+      "topic": "Enzyme Kinetics & Regulation",
+      "options": [
+        "The maximum rate of the reaction (Vmax)",
+        "The substrate concentration at which the reaction velocity is half of Vmax",
+        "The turnover number (kcat)",
+        "The activation energy in Joules"
+      ],
+      "correct_index": 1,
+      "explanation": "Km is the substrate concentration at which the reaction reaches 1/2 Vmax; a lower Km indicates higher substrate affinity.",
+      "difficulty": "medium"
+    },
+    {
+      "prompt": "What is the rate-limiting regulatory enzyme of glycolysis?",
+      "topic": "Carbohydrate Metabolism",
+      "options": [
+        "Hexokinase",
+        "Phosphofructokinase-1 (PFK-1)",
+        "Pyruvate kinase",
+        "Aldolase"
+      ],
+      "correct_index": 1,
+      "explanation": "PFK-1 catalyzes the committed phosphorylation of Fructose-6-phosphate to Fructose-1,6-bisphosphate.",
+      "difficulty": "medium"
+    }
+  ]
+}

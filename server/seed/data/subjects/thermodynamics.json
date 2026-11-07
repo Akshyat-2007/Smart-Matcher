@@ -1,0 +1,56 @@
+{
+  "name": "Thermodynamics",
+  "slug": "thermodynamics",
+  "field": "Engineering (Core)",
+  "description": "Laws of thermodynamics, closed & open systems, Carnot cycle, entropy, and vapor power cycles.",
+  "topics": [
+    {
+      "name": "First Law & Energy Conservation",
+      "description": "Heat, work, internal energy, enthalpy"
+    },
+    {
+      "name": "Second Law & Entropy",
+      "description": "Clausius inequality, entropy generation, reversibility"
+    },
+    {
+      "name": "Pure Substances & Steam Tables",
+      "description": "Phase diagrams, quality, superheated vapor"
+    },
+    {
+      "name": "Gas Power Cycles",
+      "description": "Otto, Diesel, Dual, and Brayton cycles"
+    },
+    {
+      "name": "Vapor Power Cycles",
+      "description": "Rankine cycle, reheat, regeneration"
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "What does the Second Law of Thermodynamics state regarding an isolated system?",
+      "topic": "Second Law & Entropy",
+      "options": [
+        "Total energy decreases over time",
+        "The total entropy of an isolated system always increases or remains constant for reversible processes",
+        "Temperature cannot drop below zero Celsius",
+        "Heat naturally flows from colder to hotter bodies"
+      ],
+      "correct_index": 1,
+      "explanation": "The second law establishes the arrow of time: Delta S_isolated >= 0 for any natural process.",
+      "difficulty": "easy"
+    },
+    {
+      "prompt": "What represents the thermal efficiency of a reversible Carnot heat engine operating between temperatures T_H and T_L (in Kelvin)?",
+      "topic": "Second Law & Entropy",
+      "options": [
+        "1 - (T_L / T_H)",
+        "1 - (T_H / T_L)",
+        "T_L / T_H",
+        "(T_H - T_L) / T_L"
+      ],
+      "correct_index": 0,
+      "explanation": "The maximum theoretical efficiency of any heat engine operating between two thermal reservoirs is eta = 1 - (T_L / T_H).",
+      "difficulty": "medium"
+    }
+  ]
+}

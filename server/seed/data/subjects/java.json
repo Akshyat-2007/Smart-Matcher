@@ -1,0 +1,56 @@
+{
+  "name": "Java",
+  "slug": "java",
+  "field": "Engineering (CS/IT)",
+  "description": "Core Java, JVM architecture, Collections Framework, Multithreading, and Garbage Collection.",
+  "topics": [
+    {
+      "name": "OOP & Interfaces",
+      "description": "Polymorphism, abstraction, default methods"
+    },
+    {
+      "name": "Collections Framework",
+      "description": "ArrayList, HashMap, TreeMap, concurrent sets"
+    },
+    {
+      "name": "JVM & Memory Management",
+      "description": "Heap, Stack, Metaspace, GC algorithms"
+    },
+    {
+      "name": "Exception Handling",
+      "description": "Checked vs unchecked exceptions, try-with-resources"
+    },
+    {
+      "name": "Streams & Lambdas",
+      "description": "Functional interfaces, map/filter/reduce"
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "Why should you override `hashCode()` whenever you override `equals()` in a Java class?",
+      "topic": "Collections Framework",
+      "options": [
+        "To allow the JVM to serialize the object",
+        "To ensure equal objects produce identical hash codes when used in hash-based collections like HashMap",
+        "To speed up garbage collection",
+        "To allow polymorphism in subclasses"
+      ],
+      "correct_index": 1,
+      "explanation": "The contract of hashCode states that if two objects are equal according to equals(), they must produce the same hashCode.",
+      "difficulty": "medium"
+    },
+    {
+      "prompt": "Where are local primitive variables stored during method execution in Java?",
+      "topic": "JVM & Memory Management",
+      "options": [
+        "Heap memory",
+        "Call Stack frame",
+        "Metaspace",
+        "Eden space"
+      ],
+      "correct_index": 1,
+      "explanation": "Local primitive variables and object reference variables are allocated directly on the thread’s call stack frame.",
+      "difficulty": "easy"
+    }
+  ]
+}

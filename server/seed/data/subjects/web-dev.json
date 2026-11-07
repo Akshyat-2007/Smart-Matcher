@@ -1,0 +1,56 @@
+{
+  "name": "Web Development",
+  "slug": "web-dev",
+  "field": "Engineering (CS/IT)",
+  "description": "Modern front-end, DOM, browser rendering, REST/GraphQL APIs, authentication, and state.",
+  "topics": [
+    {
+      "name": "HTML5 & Semantic DOM",
+      "description": "Semantic tags, accessibility, web storage"
+    },
+    {
+      "name": "CSS & Modern Layouts",
+      "description": "Flexbox, CSS Grid, animations, responsive design"
+    },
+    {
+      "name": "JavaScript & Event Loop",
+      "description": "Promises, async/await, microtasks, closures"
+    },
+    {
+      "name": "Client-Side Frameworks",
+      "description": "React component lifecycle, hooks, virtual DOM"
+    },
+    {
+      "name": "Backend APIs & Security",
+      "description": "REST, CORS, JWT, XSS, CSRF mitigation"
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "In the JavaScript event loop, in what order do synchronous code, microtasks (Promises), and macrotasks (setTimeout) execute?",
+      "topic": "JavaScript & Event Loop",
+      "options": [
+        "Synchronous -> Macrotasks -> Microtasks",
+        "Synchronous -> Microtasks -> Macrotasks",
+        "Macrotasks -> Synchronous -> Microtasks",
+        "Microtasks -> Macrotasks -> Synchronous"
+      ],
+      "correct_index": 1,
+      "explanation": "Synchronous execution finishes first, then the microtask queue (Promise callbacks) drains completely before the next macrotask is dequeued.",
+      "difficulty": "medium"
+    },
+    {
+      "prompt": "What security mechanism prevents a malicious website from executing unauthorized script requests against an authenticated API domain?",
+      "topic": "Backend APIs & Security",
+      "options": [
+        "Cross-Origin Resource Sharing (CORS) & SameSite cookies",
+        "DNS prefetching",
+        "Gzip compression",
+        "Service worker caching"
+      ],
+      "correct_index": 0,
+      "explanation": "CORS policy and SameSite cookie attributes protect web endpoints from unauthorized cross-origin requests and CSRF attacks.",
+      "difficulty": "medium"
+    }
+  ]
+}

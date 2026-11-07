@@ -1,0 +1,56 @@
+{
+  "name": "Engineering Mechanics",
+  "slug": "eng-mechanics",
+  "field": "Engineering (Core)",
+  "description": "Statics, force equilibrium, trusses, friction, centroids, and rigid body dynamics.",
+  "topics": [
+    {
+      "name": "Equilibrium & Free Body Diagrams",
+      "description": "Resultant forces, moments, support reactions"
+    },
+    {
+      "name": "Trusses & Frames",
+      "description": "Method of joints, method of sections"
+    },
+    {
+      "name": "Friction",
+      "description": "Static and kinetic friction, belt friction, wedges"
+    },
+    {
+      "name": "Centroids & Moment of Inertia",
+      "description": "Centroid of areas, parallel axis theorem"
+    },
+    {
+      "name": "Kinematics & Kinetics",
+      "description": "Work-energy, impulse-momentum, Newton’s second law"
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "In a truss analyzed using the Method of Joints, what assumption is made about the joints?",
+      "topic": "Trusses & Frames",
+      "options": [
+        "All joints are rigid and carry bending moments",
+        "All joints are frictionless pinned connections carrying only axial forces",
+        "Loads can be applied anywhere along the length of members",
+        "Members carry shear forces"
+      ],
+      "correct_index": 1,
+      "explanation": "Ideal truss theory assumes frictionless pin joints, meaning members only experience pure axial tension or compression.",
+      "difficulty": "easy"
+    },
+    {
+      "prompt": "According to the Parallel Axis Theorem, how is the moment of inertia I about any parallel axis distance d away calculated?",
+      "topic": "Centroids & Moment of Inertia",
+      "options": [
+        "I = I_cm - m * d^2",
+        "I = I_cm + m * d^2",
+        "I = I_cm * d",
+        "I = I_cm / d^2"
+      ],
+      "correct_index": 1,
+      "explanation": "The moment of inertia about an axis parallel to a centroidal axis is I_cm + m * d^2.",
+      "difficulty": "medium"
+    }
+  ]
+}

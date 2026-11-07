@@ -1,0 +1,172 @@
+{
+  "metadata": {
+    "cohortSize": 200,
+    "timestamp": "2026-11-07T09:48:48.666Z",
+    "seed": 1007,
+    "subjects": [
+      "java",
+      "c-programming",
+      "eng-physics",
+      "os",
+      "dsa",
+      "biology",
+      "python",
+      "networks",
+      "thermodynamics",
+      "physiology",
+      "pathology",
+      "basic-electrical",
+      "dbms",
+      "web-dev",
+      "eng-mechanics",
+      "eng-chemistry",
+      "eng-math",
+      "biochemistry",
+      "pharmacology",
+      "human-anatomy"
+    ]
+  },
+  "strategies": [
+    {
+      "id": "random",
+      "name": "Random Pairing",
+      "totalPairs": 100,
+      "averageScore": 4.11,
+      "badMatchesCount": 99,
+      "badMatchRate": 99,
+      "badMatchesAvoidedPct": 0,
+      "retentionWithoutAccountability": {
+        "withAccountability": false,
+        "totalPairs": 100,
+        "weeklyAttendance": [
+          19,
+          3,
+          1,
+          0
+        ],
+        "weeklyRates": [
+          19,
+          3,
+          1,
+          0
+        ],
+        "totalCompletedSessions": 23,
+        "totalPossibleSessions": 400,
+        "overallCompletionRate": 5.8
+      },
+      "retentionWithAccountability": {
+        "withAccountability": true,
+        "totalPairs": 100,
+        "weeklyAttendance": [
+          36,
+          35,
+          44,
+          39
+        ],
+        "weeklyRates": [
+          36,
+          35,
+          44,
+          39
+        ],
+        "totalCompletedSessions": 154,
+        "totalPossibleSessions": 400,
+        "overallCompletionRate": 38.5
+      }
+    },
+    {
+      "id": "greedy",
+      "name": "Naive Greedy (Slot-only)",
+      "totalPairs": 87,
+      "averageScore": 36.26,
+      "badMatchesCount": 68,
+      "badMatchRate": 78.2,
+      "badMatchesAvoidedPct": 31,
+      "retentionWithoutAccountability": {
+        "withAccountability": false,
+        "totalPairs": 87,
+        "weeklyAttendance": [
+          34,
+          18,
+          10,
+          7
+        ],
+        "weeklyRates": [
+          39.1,
+          20.7,
+          11.5,
+          8
+        ],
+        "totalCompletedSessions": 69,
+        "totalPossibleSessions": 348,
+        "overallCompletionRate": 19.8
+      },
+      "retentionWithAccountability": {
+        "withAccountability": true,
+        "totalPairs": 87,
+        "weeklyAttendance": [
+          50,
+          46,
+          50,
+          63
+        ],
+        "weeklyRates": [
+          57.5,
+          52.9,
+          57.5,
+          72.4
+        ],
+        "totalCompletedSessions": 209,
+        "totalPossibleSessions": 348,
+        "overallCompletionRate": 60.1
+      }
+    },
+    {
+      "id": "smart_engine",
+      "name": "Smart Engine (Teach-Swap + Irving Stable)",
+      "totalPairs": 83,
+      "averageScore": 49.77,
+      "badMatchesCount": 30,
+      "badMatchRate": 36.1,
+      "badMatchesAvoidedPct": 69,
+      "retentionWithoutAccountability": {
+        "withAccountability": false,
+        "totalPairs": 83,
+        "weeklyAttendance": [
+          38,
+          22,
+          9,
+          6
+        ],
+        "weeklyRates": [
+          45.8,
+          26.5,
+          10.8,
+          7.2
+        ],
+        "totalCompletedSessions": 75,
+        "totalPossibleSessions": 332,
+        "overallCompletionRate": 22.6
+      },
+      "retentionWithAccountability": {
+        "withAccountability": true,
+        "totalPairs": 83,
+        "weeklyAttendance": [
+          53,
+          54,
+          55,
+          63
+        ],
+        "weeklyRates": [
+          63.9,
+          65.1,
+          66.3,
+          75.9
+        ],
+        "totalCompletedSessions": 225,
+        "totalPossibleSessions": 332,
+        "overallCompletionRate": 67.8
+      }
+    }
+  ]
+}

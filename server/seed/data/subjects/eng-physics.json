@@ -1,0 +1,56 @@
+{
+  "name": "Engineering Physics",
+  "slug": "eng-physics",
+  "field": "Engineering (Core)",
+  "description": "Wave optics, lasers, quantum mechanics basics, electromagnetic theory, and solid state physics.",
+  "topics": [
+    {
+      "name": "Wave Optics & Interference",
+      "description": "Diffraction gratings, thin films, polarization"
+    },
+    {
+      "name": "Lasers & Fiber Optics",
+      "description": "Stimulated emission, optical fibers, numerical aperture"
+    },
+    {
+      "name": "Quantum Mechanics Basics",
+      "description": "De Broglie wavelength, wave-particle duality, uncertainty"
+    },
+    {
+      "name": "Electromagnetism & Maxwell",
+      "description": "Gauss, Faraday, Ampere laws, electromagnetic waves"
+    },
+    {
+      "name": "Semiconductor Physics",
+      "description": "Energy bands, Fermi level, p-n junctions"
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "In optical fibers, what optical phenomenon guides light along the core without escaping into the cladding?",
+      "topic": "Lasers & Fiber Optics",
+      "options": [
+        "Diffraction",
+        "Total Internal Reflection",
+        "Brewster polarization",
+        "Double refraction"
+      ],
+      "correct_index": 1,
+      "explanation": "When the angle of incidence in the core exceeds the critical angle relative to the lower-index cladding, total internal reflection traps the light wave.",
+      "difficulty": "easy"
+    },
+    {
+      "prompt": "According to Heisenberg’s Uncertainty Principle, which pair of variables cannot be simultaneously measured with arbitrary precision?",
+      "topic": "Quantum Mechanics Basics",
+      "options": [
+        "Position and Linear Momentum",
+        "Energy and Temperature",
+        "Mass and Velocity",
+        "Electric charge and magnetic field"
+      ],
+      "correct_index": 0,
+      "explanation": "Delta x * Delta p >= h-bar / 2 establishes that position and linear momentum are canonically conjugate observables.",
+      "difficulty": "easy"
+    }
+  ]
+}

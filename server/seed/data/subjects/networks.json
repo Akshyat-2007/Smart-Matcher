@@ -1,0 +1,56 @@
+{
+  "name": "Computer Networks",
+  "slug": "networks",
+  "field": "Engineering (CS/IT)",
+  "description": "OSI and TCP/IP stack, routing protocols, flow & congestion control, DNS, and TLS/HTTPS.",
+  "topics": [
+    {
+      "name": "Network Models (OSI / TCP/IP)",
+      "description": "Layers, encapsulation, packet headers"
+    },
+    {
+      "name": "Transport Layer (TCP / UDP)",
+      "description": "3-way handshake, congestion control, windowing"
+    },
+    {
+      "name": "Network Layer & Routing",
+      "description": "IPv4/IPv6, subnetting, OSPF, BGP"
+    },
+    {
+      "name": "Link Layer & MAC",
+      "description": "Ethernet, ARP, collision domains, switches"
+    },
+    {
+      "name": "Application Protocols",
+      "description": "DNS, HTTP/2, HTTP/3, TLS/SSL"
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "During the TCP 3-way handshake, which flags are exchanged between client and server?",
+      "topic": "Transport Layer (TCP / UDP)",
+      "options": [
+        "SYN -> SYN-ACK -> ACK",
+        "ACK -> SYN -> FIN",
+        "RST -> SYN -> ACK",
+        "SYN -> ACK -> DATA"
+      ],
+      "correct_index": 0,
+      "explanation": "The client sends SYN, the server replies with SYN-ACK, and the client acknowledges with ACK to establish a full-duplex connection.",
+      "difficulty": "easy"
+    },
+    {
+      "prompt": "Which protocol translates an IP address into a physical hardware MAC address on a local area network?",
+      "topic": "Link Layer & MAC",
+      "options": [
+        "DNS",
+        "ARP (Address Resolution Protocol)",
+        "DHCP",
+        "ICMP"
+      ],
+      "correct_index": 1,
+      "explanation": "ARP broadcasts on the local network to discover the Layer 2 MAC address associated with a given Layer 3 IP address.",
+      "difficulty": "easy"
+    }
+  ]
+}

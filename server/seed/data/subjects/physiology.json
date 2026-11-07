@@ -1,0 +1,56 @@
+{
+  "name": "Physiology",
+  "slug": "physiology",
+  "field": "Medical",
+  "description": "Homeostatic mechanisms, action potentials, cardiac cycle, renal filtration, and endocrine signaling.",
+  "topics": [
+    {
+      "name": "Neurophysiology & Action Potentials",
+      "description": "Resting membrane potential, Na+/K+ channels, synapses"
+    },
+    {
+      "name": "Cardiovascular Physiology",
+      "description": "Cardiac output, blood pressure regulation, Baroreceptors"
+    },
+    {
+      "name": "Respiratory Physiology",
+      "description": "Gas exchange, ventilation-perfusion, hemoglobin affinity"
+    },
+    {
+      "name": "Renal Physiology",
+      "description": "GFR, nephron transport, countercurrent multiplier"
+    },
+    {
+      "name": "Endocrine System",
+      "description": "Hormonal axes, feedback loops, insulin/glucagon"
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "What primarily causes the rapid depolarization phase (upstroke) of a neuronal action potential?",
+      "topic": "Neurophysiology & Action Potentials",
+      "options": [
+        "Influx of sodium ions (Na+) through voltage-gated channels",
+        "Efflux of potassium ions (K+)",
+        "Activation of the Na+/K+ ATPase pump",
+        "Influx of chloride ions (Cl-)"
+      ],
+      "correct_index": 0,
+      "explanation": "Once threshold is reached, voltage-gated Na+ channels rapidly open, allowing Na+ to rush down its electrochemical gradient into the cell.",
+      "difficulty": "easy"
+    },
+    {
+      "prompt": "In the nephron, where does the majority of filtered water, sodium, and 100% of filtered glucose get reabsorbed?",
+      "topic": "Renal Physiology",
+      "options": [
+        "Distal convoluted tubule",
+        "Proximal convoluted tubule",
+        "Collecting duct",
+        "Loop of Henle ascending limb"
+      ],
+      "correct_index": 1,
+      "explanation": "The proximal convoluted tubule reabsorbs ~65% of water and electrolytes and virtually all glucose via SGLT transporters.",
+      "difficulty": "medium"
+    }
+  ]
+}

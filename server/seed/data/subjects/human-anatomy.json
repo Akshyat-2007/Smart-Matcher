@@ -1,0 +1,56 @@
+{
+  "name": "Human Anatomy",
+  "slug": "human-anatomy",
+  "field": "Medical",
+  "description": "Skeletal, muscular, cardiovascular, nervous, and visceral gross anatomy and spatial relationships.",
+  "topics": [
+    {
+      "name": "Skeletal System & Joints",
+      "description": "Axial, appendicular skeleton, synovial joints"
+    },
+    {
+      "name": "Muscular System",
+      "description": "Origins, insertions, actions, muscle compartments"
+    },
+    {
+      "name": "Cardiovascular Anatomy",
+      "description": "Heart chambers, great vessels, coronary circulation"
+    },
+    {
+      "name": "Nervous System & Brain",
+      "description": "Cerebrum, cerebellum, brainstem, cranial nerves"
+    },
+    {
+      "name": "Gastrointestinal & Abdominal",
+      "description": "Peritoneum, liver, pancreas, intestines"
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "Which heart valve prevents backflow of oxygenated blood from the left ventricle into the left atrium during ventricular systole?",
+      "topic": "Cardiovascular Anatomy",
+      "options": [
+        "Tricuspid valve",
+        "Mitral (Bicuspid) valve",
+        "Aortic semilunar valve",
+        "Pulmonary valve"
+      ],
+      "correct_index": 1,
+      "explanation": "The mitral (bicuspid) valve is located between the left atrium and left ventricle.",
+      "difficulty": "easy"
+    },
+    {
+      "prompt": "Which cranial nerve provides parasympathetic innervation to thoracic and abdominal viscera including the heart and GI tract?",
+      "topic": "Nervous System & Brain",
+      "options": [
+        "Cranial Nerve X (Vagus Nerve)",
+        "Cranial Nerve VII (Facial Nerve)",
+        "Cranial Nerve V (Trigeminal)",
+        "Cranial Nerve XII (Hypoglossal)"
+      ],
+      "correct_index": 0,
+      "explanation": "The Vagus nerve (CN X) carries extensive parasympathetic autonomic fibers to organs in the thorax and abdomen.",
+      "difficulty": "medium"
+    }
+  ]
+}

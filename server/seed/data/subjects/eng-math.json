@@ -1,0 +1,56 @@
+{
+  "name": "Engineering Mathematics",
+  "slug": "eng-math",
+  "field": "Engineering (Core)",
+  "description": "Calculus, linear algebra, eigenvalues, differential equations, Fourier series, and Laplace transforms.",
+  "topics": [
+    {
+      "name": "Linear Algebra & Matrices",
+      "description": "Rank, determinants, eigenvalues, diagonalization"
+    },
+    {
+      "name": "Differential Calculus & PDEs",
+      "description": "Partial derivatives, gradient, divergence, curl"
+    },
+    {
+      "name": "Ordinary Differential Equations",
+      "description": "First & second order ODEs, homogeneous solutions"
+    },
+    {
+      "name": "Laplace & Fourier Transforms",
+      "description": "Frequency domain analysis, transfer functions"
+    },
+    {
+      "name": "Probability & Statistics",
+      "description": "Normal distribution, hypothesis testing, Bayes theorem"
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "What is the sum of the eigenvalues of any square matrix equal to?",
+      "topic": "Linear Algebra & Matrices",
+      "options": [
+        "The determinant of the matrix",
+        "The trace (sum of diagonal entries) of the matrix",
+        "Zero",
+        "The matrix rank"
+      ],
+      "correct_index": 1,
+      "explanation": "A fundamental theorem of linear algebra proves that the sum of the eigenvalues equals the trace of the matrix.",
+      "difficulty": "easy"
+    },
+    {
+      "prompt": "What is the Laplace transform of the unit step function u(t)?",
+      "topic": "Laplace & Fourier Transforms",
+      "options": [
+        "1",
+        "1 / s",
+        "1 / s^2",
+        "e^(-s)"
+      ],
+      "correct_index": 1,
+      "explanation": "The integral from 0 to infinity of e^(-st) * 1 dt evaluates to 1/s for s > 0.",
+      "difficulty": "easy"
+    }
+  ]
+}

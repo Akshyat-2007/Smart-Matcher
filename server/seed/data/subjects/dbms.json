@@ -1,0 +1,56 @@
+{
+  "name": "DBMS",
+  "slug": "dbms",
+  "field": "Engineering (CS/IT)",
+  "description": "Relational algebra, SQL, normalization (1NF-BCNF), ACID properties, and indexing.",
+  "topics": [
+    {
+      "name": "Relational Modeling & SQL",
+      "description": "DDL, DML, Joins, Aggregations, Subqueries"
+    },
+    {
+      "name": "Normalization",
+      "description": "1NF, 2NF, 3NF, BCNF, functional dependencies"
+    },
+    {
+      "name": "Transactions & ACID",
+      "description": "Atomicity, Consistency, Isolation, Durability"
+    },
+    {
+      "name": "Indexing & B-Trees",
+      "description": "Clustered vs non-clustered, B+ Trees"
+    },
+    {
+      "name": "Concurrency Control",
+      "description": "2-Phase Locking, deadlocks, MVCC"
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "Which normal form eliminates transitive functional dependencies for non-prime attributes?",
+      "topic": "Normalization",
+      "options": [
+        "First Normal Form (1NF)",
+        "Second Normal Form (2NF)",
+        "Third Normal Form (3NF)",
+        "Boyce-Codd Normal Form (BCNF)"
+      ],
+      "correct_index": 2,
+      "explanation": "3NF requires 2NF and mandates that no non-prime attribute is transitively dependent on the primary key.",
+      "difficulty": "medium"
+    },
+    {
+      "prompt": "In database transaction management, what does the \"Isolation\" property guarantee?",
+      "topic": "Transactions & ACID",
+      "options": [
+        "Data survives sudden power failure",
+        "Concurrent transactions execute without uncommitted interference",
+        "Database constraints are always valid",
+        "All-or-nothing execution"
+      ],
+      "correct_index": 1,
+      "explanation": "Isolation ensures concurrent execution leaves the database in the same state as if transactions ran serially.",
+      "difficulty": "medium"
+    }
+  ]
+}

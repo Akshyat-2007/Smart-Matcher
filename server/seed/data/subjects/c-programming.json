@@ -1,0 +1,56 @@
+{
+  "name": "C Programming",
+  "slug": "c-programming",
+  "field": "Engineering (CS/IT)",
+  "description": "Pointers, dynamic memory (malloc/free), structs, memory layouts, and bitwise operations.",
+  "topics": [
+    {
+      "name": "Pointers & Pointer Arithmetic",
+      "description": "Addresses, dereferencing, void pointers"
+    },
+    {
+      "name": "Dynamic Memory Allocation",
+      "description": "malloc, calloc, realloc, free, leaks"
+    },
+    {
+      "name": "Structs & Unions",
+      "description": "Padding, alignment, typedefs"
+    },
+    {
+      "name": "Bitwise Manipulation",
+      "description": "Shifts, masks, bit flags"
+    },
+    {
+      "name": "Preprocessors & Compilation",
+      "description": "Macros, header guards, linking"
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "What happens if you fail to call free() on memory allocated via malloc() before the pointer goes out of scope?",
+      "topic": "Dynamic Memory Allocation",
+      "options": [
+        "Segmentation fault immediately occurs",
+        "Memory leak occurs as heap bytes remain allocated",
+        "The OS automatically garbage collects it immediately",
+        "The stack overflows"
+      ],
+      "correct_index": 1,
+      "explanation": "C lacks automatic garbage collection. Unfreed heap allocations remain reserved until process exit, causing a memory leak.",
+      "difficulty": "easy"
+    },
+    {
+      "prompt": "If `int *ptr = arr;` where `arr` is an integer array, what does `*(ptr + 2)` evaluate to?",
+      "topic": "Pointers & Pointer Arithmetic",
+      "options": [
+        "The value at `arr[2]`",
+        "The memory address shifted by 2 bits",
+        "The value at `arr[0] + 2`",
+        "A null pointer"
+      ],
+      "correct_index": 0,
+      "explanation": "Pointer arithmetic scales the offset by `sizeof(int)`. Dereferencing `*(ptr + 2)` is semantically identical to `arr[2]`.",
+      "difficulty": "medium"
+    }
+  ]
+}

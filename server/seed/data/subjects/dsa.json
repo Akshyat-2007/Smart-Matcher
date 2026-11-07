@@ -1,0 +1,95 @@
+{
+  "name": "Data Structures & Algorithms",
+  "slug": "dsa",
+  "field": "Engineering (CS/IT)",
+  "description": "Core linear and non-linear structures, recursion, dynamic programming, and asymptotic complexity.",
+  "topics": [
+    {
+      "name": "Arrays & Strings",
+      "description": "Two pointers, sliding window, prefix sums"
+    },
+    {
+      "name": "Linked Lists",
+      "description": "Cycle detection, reversals, merge lists"
+    },
+    {
+      "name": "Trees & BST",
+      "description": "DFS/BFS traversals, LCA, AVL balancing"
+    },
+    {
+      "name": "Graphs & Shortest Paths",
+      "description": "Dijkstra, Bellman-Ford, topological sort"
+    },
+    {
+      "name": "Dynamic Programming",
+      "description": "Memoization, tabulation, optimal substructure"
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "Which data structure is most optimal to check for balanced brackets or parentheses in O(N) time?",
+      "topic": "Arrays & Strings",
+      "options": [
+        "Queue",
+        "Stack",
+        "Binary Search Tree",
+        "Hash Map"
+      ],
+      "correct_index": 1,
+      "explanation": "A Stack follows Last-In-First-Out (LIFO), which matches the nesting order of opening and closing brackets.",
+      "difficulty": "easy"
+    },
+    {
+      "prompt": "In Floyd’s Cycle-Finding algorithm (tortoise and hare), how do the two pointers traverse a linked list?",
+      "topic": "Linked Lists",
+      "options": [
+        "Both advance 1 node at a time",
+        "Slow advances 1 node, fast advances 2 nodes",
+        "Fast advances from end to start",
+        "Slow advances 2 nodes, fast advances 3 nodes"
+      ],
+      "correct_index": 1,
+      "explanation": "The slow pointer advances 1 step while the fast pointer advances 2 steps. If a cycle exists, they are guaranteed to meet inside the loop.",
+      "difficulty": "medium"
+    },
+    {
+      "prompt": "What is the in-order traversal of a valid Binary Search Tree (BST) guaranteed to produce?",
+      "topic": "Trees & BST",
+      "options": [
+        "Reverse sorted order",
+        "Values in non-decreasing sorted order",
+        "Values grouped by depth",
+        "A min-heap representation"
+      ],
+      "correct_index": 1,
+      "explanation": "In-order traversal visits (Left, Root, Right), which in a BST outputs keys in strictly ascending sorted order.",
+      "difficulty": "easy"
+    },
+    {
+      "prompt": "Which algorithm finds single-source shortest paths in a graph with non-negative edge weights in O((V + E) log V) time?",
+      "topic": "Graphs & Shortest Paths",
+      "options": [
+        "Floyd-Warshall",
+        "Breadth First Search",
+        "Dijkstra’s Algorithm with Min-Heap",
+        "Kruskal’s Algorithm"
+      ],
+      "correct_index": 2,
+      "explanation": "Dijkstra’s algorithm using a priority queue/min-heap efficiently computes non-negative shortest paths in O((V+E) log V).",
+      "difficulty": "medium"
+    },
+    {
+      "prompt": "What are the two foundational prerequisites for applying Dynamic Programming to an optimization problem?",
+      "topic": "Dynamic Programming",
+      "options": [
+        "Greedy choice & sorted inputs",
+        "Overlapping subproblems & optimal substructure",
+        "Bipartite graph & tree depth",
+        "Linear time & constant space"
+      ],
+      "correct_index": 1,
+      "explanation": "Dynamic Programming applies when a problem exhibits optimal substructure and overlapping subproblems that can be cached.",
+      "difficulty": "hard"
+    }
+  ]
+}

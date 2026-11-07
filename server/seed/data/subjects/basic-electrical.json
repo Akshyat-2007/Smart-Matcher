@@ -1,0 +1,56 @@
+{
+  "name": "Basic Electrical",
+  "slug": "basic-electrical",
+  "field": "Engineering (Core)",
+  "description": "DC/AC circuits, Kirchhoff’s laws, network theorems, transformers, and 3-phase systems.",
+  "topics": [
+    {
+      "name": "DC Circuit Analysis",
+      "description": "KCL, KVL, nodal and mesh analysis"
+    },
+    {
+      "name": "Network Theorems",
+      "description": "Thevenin, Norton, Superposition, Maximum Power"
+    },
+    {
+      "name": "AC Fundamentals",
+      "description": "Phasors, impedance, power factor, resonance"
+    },
+    {
+      "name": "Transformers",
+      "description": "Core losses, winding ratios, efficiency"
+    },
+    {
+      "name": "Electrical Machines",
+      "description": "DC motors, 3-phase induction motors"
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "Under Thevenin’s Theorem, any linear two-terminal DC network can be replaced by which equivalent circuit?",
+      "topic": "Network Theorems",
+      "options": [
+        "A single current source in parallel with a resistor",
+        "A single voltage source in series with a resistor",
+        "Two capacitors in parallel",
+        "An ideal transformer"
+      ],
+      "correct_index": 1,
+      "explanation": "Thevenin’s equivalent consists of an open-circuit voltage source (Vth) in series with an equivalent resistance (Rth).",
+      "difficulty": "easy"
+    },
+    {
+      "prompt": "What happens to the power factor of an electrical load when capacitive correction is added to an inductive motor circuit?",
+      "topic": "AC Fundamentals",
+      "options": [
+        "Power factor moves closer to unity (1.0)",
+        "Power factor drops to zero",
+        "Power factor becomes negative",
+        "Current increases exponentially"
+      ],
+      "correct_index": 0,
+      "explanation": "Capacitors supply leading reactive power (VARs) that cancel lagging inductive reactive power, bringing power factor toward unity.",
+      "difficulty": "medium"
+    }
+  ]
+}

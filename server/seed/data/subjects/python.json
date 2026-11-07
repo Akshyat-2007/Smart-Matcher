@@ -1,0 +1,69 @@
+{
+  "name": "Python",
+  "slug": "python",
+  "field": "Engineering (CS/IT)",
+  "description": "Modern Python idioms, OOP, generators, decorators, memory management, and GIL.",
+  "topics": [
+    {
+      "name": "Data Types & Comprehensions",
+      "description": "Lists, dicts, sets, generator expressions"
+    },
+    {
+      "name": "Functions & Decorators",
+      "description": "Higher-order functions, *args/**kwargs, closures"
+    },
+    {
+      "name": "OOP & Dunder Methods",
+      "description": "Classes, inheritance, __repr__, __call__"
+    },
+    {
+      "name": "Generators & Iterators",
+      "description": "yield, next(), iter(), memory-efficient streams"
+    },
+    {
+      "name": "Concurrency & GIL",
+      "description": "Threading, multiprocessing, asyncio, GIL locks"
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "What is the key advantage of a generator expression over a list comprehension in Python?",
+      "topic": "Generators & Iterators",
+      "options": [
+        "It executes in parallel across CPU cores",
+        "It produces values lazily on-demand without loading the whole list into memory",
+        "It automatically compiles to C",
+        "It allows modifying immutable tuples"
+      ],
+      "correct_index": 1,
+      "explanation": "Generators evaluate items lazily via the iterator protocol, conserving RAM when handling massive or infinite sequences.",
+      "difficulty": "medium"
+    },
+    {
+      "prompt": "In Python, what is the default behavior when passing a mutable object (like a list) as a default parameter value in a function definition?",
+      "topic": "Functions & Decorators",
+      "options": [
+        "A new list is created on every call",
+        "The same list object is shared across subsequent calls",
+        "Python raises a TypeError at parse time",
+        "The list becomes an immutable tuple"
+      ],
+      "correct_index": 1,
+      "explanation": "Default argument expressions in Python are evaluated once when the function definition is executed, leading to a persistent shared object.",
+      "difficulty": "medium"
+    },
+    {
+      "prompt": "What does the Global Interpreter Lock (GIL) in CPython prevent?",
+      "topic": "Concurrency & GIL",
+      "options": [
+        "Multiple threads from executing Python bytecode simultaneously on separate cores",
+        "Multiple processes from sharing disk files",
+        "Garbage collection cycles",
+        "Asyncio coroutines from awaiting I/O"
+      ],
+      "correct_index": 0,
+      "explanation": "The GIL ensures that only one native thread executes Python bytecode at any given moment, making CPU-bound multi-threading single-core in CPython.",
+      "difficulty": "hard"
+    }
+  ]
+}
