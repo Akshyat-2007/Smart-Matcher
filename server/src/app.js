@@ -22,6 +22,18 @@ app.get('/api/health', (req, res) => {
   });
 });
 
+// Scheduler Execution Endpoint (for Vercel Cron Jobs)
+app.get('/api/scheduler/run', async (req, res) => {
+  try {
+    const { runSchedulerCycle } = await import('./scheduler/index.js');
+    await runSchedulerCycle();
+    res.json({ status: 'ok', message: 'Accountability cycle executed successfully.' });
+  } catch (err) {
+    console.error('[SCHEDULER CRON ERROR]', err);
+    res.status(500).json({ error: 'Failed to run scheduler cycle.' });
+  }
+});
+
 // API Routes
 app.use('/api/auth', authRoutes);
 app.get('/api/fields', subjectController.getFields);
