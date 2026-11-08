@@ -152,7 +152,7 @@ export async function seedDatabase() {
 
       const [matchRes] = await connection.query(
         'INSERT INTO matches (subject_id, status, streak_count, compatibility_score, tool_used, tool_link) VALUES (?, ?, ?, ?, ?, ?)',
-        [dsaId, 'active', 3, 94.5, 'discord', 'https://discord.gg/study-peer-dsa']
+        [dsaId, 'active', 3, 94.5, 'zoom', 'https://zoom.us/j/9876543210?pwd=StudyGroupDSA']
       );
       const matchId = matchRes.insertId;
 
@@ -195,7 +195,7 @@ export async function seedDatabase() {
         'INSERT INTO messages (match_id, user_id, content) VALUES (?, ?, ?), (?, ?, ?)',
         [
           matchId, aliceId, 'Hey Bob! Excited for our teach-swap session tomorrow. I prepared some visual slides on DP memoization!',
-          matchId, bobId, 'Awesome Alice! I have 3 clean graph BFS diagrams ready for you. See you on Discord at 6pm!'
+          matchId, bobId, 'Awesome Alice! I have 3 clean graph BFS diagrams ready for you. See you on Zoom at 6pm!'
         ]
       );
 
