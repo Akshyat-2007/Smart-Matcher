@@ -3,21 +3,15 @@ import dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { loadSeedCatalog, generateSyntheticCohort } from './seedData.js';
+import { buildDbConfig } from './pool.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 dotenv.config({ path: path.resolve(__dirname, '../../.env') });
 
-const dbConfig = {
-  host: process.env.DB_HOST || 'localhost',
-  port: parseInt(process.env.DB_PORT || '3306', 10),
-  user: process.env.DB_USER || 'root',
-  password: process.env.DB_PASSWORD || '',
-  database: process.env.DB_NAME || 'smart_study_matcher'
-};
-
 export async function seedDatabase() {
-  console.log(`[DB SEED] Starting dynamic seed into '${dbConfig.database}' on ${dbConfig.host}:${dbConfig.port}...`);
+  const dbConfig = buildDbConfig();
+  console.log(`[DB SEED] Starting dynamic seed into '${dbConfig.database || 'default'}' on ${dbConfig.host || 'URI'}:${dbConfig.port || ''}...`);
   let connection;
   try {
     connection = await mysql.createConnection(dbConfig);

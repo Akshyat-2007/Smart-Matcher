@@ -3,37 +3,42 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
+import { buildDbConfig } from './pool.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 dotenv.config({ path: path.resolve(__dirname, '../../.env') });
 
-const dbConfig = {
-  host: process.env.DB_HOST || 'localhost',
-  port: parseInt(process.env.DB_PORT || '3306', 10),
-  user: process.env.DB_USER || 'root',
-  password: process.env.DB_PASSWORD || '',
-  multipleStatements: true
-};
-
-const DB_NAME = process.env.DB_NAME || 'smart_study_matcher';
-
 export async function initDatabase() {
-  console.log(`[DB INIT] Connecting to MySQL at ${dbConfig.host}:${dbConfig.port} as '${dbConfig.user}'...`);
+  const baseConfig = buildDbConfig();
+  const dbName = process.env.DB_NAME || 'smart_study_matcher';
+
+  console.log(`[DB INIT] Connecting to MySQL at ${baseConfig.host || 'URI'} as '${baseConfig.user || 'user'}'...`);
   let connection;
   try {
-    connection = await mysql.createConnection(dbConfig);
+    connection = await mysql.createConnection({
+      ...baseConfig,
+      multipleStatements: true
+    });
     console.log('[DB INIT] Connection established.');
 
-    console.log(`[DB INIT] Creating database '${DB_NAME}' if not exists...`);
-    await connection.query(`CREATE DATABASE IF NOT EXISTS \`${DB_NAME}\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;`);
-    await connection.query(`USE \`${DB_NAME}\`;`);
+    // Attempt to create database if permitted, otherwise ignore permission error
+    try {
+      await connection.query(`CREATE DATABASE IF NOT EXISTS \`${dbName}\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;`);
+      await connection.query(`USE \`${dbName}\`;`);
+    } catch (dbErr) {
+      console.log(`[DB INIT] Notice on CREATE/USE DATABASE: ${dbErr.message} (Proceeding with default database).`);
+    }
 
     const schemaPath = path.resolve(__dirname, '../../schema.sql');
-    const schemaSql = fs.readFileSync(schemaPath, 'utf8');
+    let schemaSql = fs.readFileSync(schemaPath, 'utf8');
 
-    console.log('[DB INIT] Executing schema.sql statements...');
-    // Execute multiple statements
+    // Strip hardcoded CREATE DATABASE / USE statements so it targets the assigned database
+    schemaSql = schemaSql
+      .replace(/CREATE DATABASE[\s\S]*?;/gi, '')
+      .replace(/USE\s+[`\w]+;/gi, '');
+
+    console.log('[DB INIT] Executing schema table definitions...');
     await connection.query(schemaSql);
     console.log('[DB INIT] Schema successfully applied to MySQL database.');
 
